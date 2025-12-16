@@ -1,16 +1,102 @@
-# React + Vite
+# Sales Dashboard Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project is an interactive **Sales Dashboard Application** built using **React.js and Vite**.
+It provides visual insights into sales data using charts and filters, helping users analyze trends, categories, and regions efficiently.
+The dashboard supports **cross-filtering, date range selection, tooltips, CSV export**, and a fully **responsive user interface** that adapts to desktop, tablet, and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Live URL:** [http://dashboard-project-qale-naajdh4pk-amarthi-satyas-projects.vercel.app]
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+* Interactive charts (Line, Bar, Pie) for sales analysis
+* Cross-filtering between multiple charts
+* Date range selection for dynamic data filtering
+* Tooltips on chart hover for detailed information
+* Fully responsive layout (desktop, tablet, mobile)
+* Export filtered data to CSV format
+
+---
+
+## Architecture & Component Structure
+
+This application follows a **component-based architecture** using React.
+
+* `App.jsx` acts as the root component and manages global state and layout.
+* Chart components (LineChart, BarChart, PieChart) are modular and reusable.
+* Filter components (date range, category filters) update shared state.
+* State is passed via props and managed using React hooks.
+* The project uses a clear folder structure to separate concerns.
+
+### Folder Structure
+
+```
+src/
+ ├── components/
+ │    ├── charts/
+ │    ├── filters/
+ │    └── ExportCSV.jsx
+ ├── data/
+ ├── App.jsx
+ ├── main.jsx
+```
+
+---
+
+## Tech Stack & Libraries
+
+* **React.js** – Component-based UI development
+* **Vite** – Fast development server and optimized build tool
+* **Recharts / Chart.js** – Interactive and responsive data visualizations
+* **PapaParse** – CSV generation and export functionality
+* **CSS / Tailwind CSS** – Responsive and clean UI styling
+* **Vercel** – Cloud platform for deployment and hosting
+
+Each technology was chosen to ensure performance, scalability, and ease of development.
+
+---
+
+## Local Setup Instructions
+
+Follow these steps to run the project locally:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/satya-amarthi04/dashboard-project.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd dashboard-project
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open  browser and visit:
+
+   ```
+   http://localhost:5173
+   ```
+
+
+
